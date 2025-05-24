@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoki Bento</title>
+    <style>
+        #header-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li.nav-header{
+            display: inline;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://lh3.google.com/u/2/d/18vC-v96MsS2JuQFjHp2nFdwuXnEHPLU6=w1364-h608-iv1?auditContext=prefetch"
+        id="header-img"
+        alt="restaurant header"
+      />
+      <h1>Hoki Bento</h1>
+      <nav>
+        <ul>
+            <li class="nav-header"><a href="#menu">Menu</a></li>
+            <li class="nav-header"><a href="#order-form">Place Your Order</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section>
+            <h2 id="#menu">Menu</h2>
+            <article>
+                <img src="https://lh3.google.com/u/2/d/1TOmFP_2mH96NI8FNYMoqpgMFnu9fI6dd=w1364-h608-iv1?auditContext=prefetch" alt="bento-1">
+                <h3 class="menus">Bento Package 1</h3>
+                <p>This cute bento features rice, playful sausage bunnies, eggs, and veggies, all neatly packed. <br>
+                <b><i>Price only $8</b></i></p>
+            </article>
+            <br>
+            <article>
+                <img src="https://lh3.google.com/u/2/d/1Znj5PHru6QV2fBbMoz0yNz3EyN4V3oxX=w1364-h608-iv2?auditContext=prefetch" alt="bento-2">
+                <h3 class="menus">Bento Package 2</h3>
+                <p>This charming bento features adorable Rilakkuma bear-shaped rice cutouts, a central rice ball, neatly folded egg, and a colorful assortment of broccoli and cherry tomatoes. <br>
+                <b><i>Price only $7.59</b></i></p>
+            </article>
+            <br>
+            <article>
+                <img src="https://lh3.google.com/u/2/d/1kMBf6DdT3iAmJwatHS5q7i7t2Rd3hccr=w1364-h608-iv2?auditContext=prefetch" alt="bento-3">
+                <h3 class="menus">Bento Package 3</h3>
+                <p>This intricate bento features characters from Studio Ghibli's Kiki's Delivery Service, specifically Jiji the cat and a smaller character, alongside an artistic egg and colorful vegetables, all meticulously crafted for a delightful meal.<br>
+                <b><i>Price only $8.29</b></i></p>
+            </article>
+        </section>
+        <br><hr>
+        <section>
+            <h2 id="#order-form">Place Your Order</h2>
+            <br>
+            <form action="">
+                <b>What's your order?</b>
+                <ul>
+                <li><label for="bento-1">Bento Package 1 </label><input type="number" min="0" max="3" required></li>
+                <br>
+                <li><label for="bento-2">Bento Package 2 </label><input type="number" min="0" max="3" required></li>
+                <br>
+                <li><label for="bento-3">Bento Package 3 </label><input type="number" min="0" max="3" required></li>
+                </ul>
+                Do you want add anything? <label for="add-drink">Yes <input type="radio" name="drink"></label><label for="no-more-drink"> No </label><input type="radio" name="drink" required>
+                <br><br>
+                Add : <br>
+                <label for="mineral-water">Mineral Water </label><input type="checkbox" value="Mineral water">
+                <label for="oca-tea">Oca Tea </label><input type="checkbox" value="Oca tea">
+                <br><br>
+                Any special request for the restaurant? <br><textarea name="special-request" id="" maxlength="90"></textarea>
+                <br><br><input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+        <footer>
+            <p>Made with love by destriaputami</p>
+        </footer>
+    </main>
+  </body>
+</html>
